@@ -59,4 +59,8 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
+
+// stripe API Keys
+app.locals.PUBLIC_STRIPE_API_KEY = process.env.PUBLIC_STRIPE_API_KEY;
+
 module.exports = app;
